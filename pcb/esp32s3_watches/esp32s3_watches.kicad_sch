@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "546746d8-9087-4747-b922-4ea0efc98497")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 72.39 77.47)
+		(size 35.56 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00073af9-3f59-4fba-adf1-200169ccc69f")
+		(property "Sheetname" "led-circle"
+			(at 72.39 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led-circle.kicad_sch"
+			(at 72.39 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32s3_watches"
+				(path "/546746d8-9087-4747-b922-4ea0efc98497"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 138.43)
+		(size 38.1 34.29)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "325d7d11-ebbb-46db-b9b5-c623c27091e6")
+		(property "Sheetname" "esp32-s3"
+			(at 96.52 137.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32-s3.kicad_sch"
+			(at 96.52 173.3046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32s3_watches"
+				(path "/546746d8-9087-4747-b922-4ea0efc98497"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

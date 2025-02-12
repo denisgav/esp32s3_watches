@@ -51,8 +51,16 @@ void SSD1306_Init();
 #include <FastLED.h>
 
 // Define the array of leds
-CRGB onboard_leds[WS2812_ONBOARD_NUM_LEDS];
-//CRGB clock_leds[WS2812_CLOCK_NUM_LEDS];
+CRGB clock_leds[WS2812_CLOCK_NUM_LEDS];
+//--------------------------------
+
+//--------------------------------
+// -        Radar
+//--------------------------------
+#include <ld2410.h>
+
+ld2410 radar;
+void LD2410_Init();
 //--------------------------------
 
 
@@ -60,27 +68,71 @@ void setup()
 {
   Serial.begin(115200);
 
-  FastLED.addLeds<WS2812, WS2812_ONBOARD_LED_PIN, RGB>(onboard_leds, WS2812_ONBOARD_NUM_LEDS);
-  //FastLED.addLeds<WS2812, WS2812_CLOCK_LED_PIN, RGB>(clock_leds, WS2812_CLOCK_NUM_LEDS);
+  FastLED.addLeds<WS2812, WS2812_CLOCK_LED_PIN, RGB>(clock_leds, WS2812_CLOCK_NUM_LEDS);
 
   SD_MMC_Init();
   BME280_Init();
   RTC3231_Init();
   SSD1306_Init();
+  LD2410_Init();
+  
 }
 
+uint32_t lastReading = 0;
 void loop()
 {
-  BME280_print_values();
-  RTC3231_print_values();
+  radar.read();
+  if(millis() - lastReading > 1000)  //Report every 1000ms
+  {
+    lastReading = millis();
+    BME280_print_values();
+    RTC3231_print_values();
 
-  onboard_leds[0] = CRGB::Red;
-  FastLED.show();
+    int LDR_val = analogRead(LDR_IN);
+    Serial.print(F("LDR: "));
+    Serial.print(LDR_val);
+    Serial.println();
 
-  delay(1000);
+    if(radar.isConnected()){
+      
+      if(radar.presenceDetected())
+      {
+        if(radar.stationaryTargetDetected())
+        {
+          Serial.print(F("Stationary target: "));
+          Serial.print(radar.stationaryTargetDistance());
+          Serial.print(F(" cm energy:"));
+          Serial.print(radar.stationaryTargetEnergy());
+          Serial.println();
+        }
+        if(radar.movingTargetDetected())
+        {
+          Serial.print(F("Moving target: "));
+          Serial.print(radar.movingTargetDistance());
+          Serial.print(F(" cm energy:"));
+          Serial.print(radar.movingTargetEnergy());
+          Serial.println();
+        }
+      }
+      else
+      {
+        Serial.println(F("No target"));
+      }
+    }
+    else
+    {
+      Serial.println(F("Radar not connected"));
+    }
+  }
 
-  onboard_leds[0] = CRGB::Black;
-  FastLED.show();
+
+  // onboard_leds[0] = CRGB::Red;
+  // FastLED.show();
+
+  // delay(1000);
+
+  // onboard_leds[0] = CRGB::Black;
+  // FastLED.show();
 }
 
 void SD_MMC_Init()
@@ -232,4 +284,32 @@ void SSD1306_Init(){
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
   display.display();
+}
+
+void LD2410_Init()
+{
+  RADAR_SERIAL.begin(256000, SERIAL_8N1, RADAR_RX_PIN, RADAR_TX_PIN); //UART for monitoring the radar
+  delay(500);
+
+  Serial.print(F("\nConnect LD2410 radar TX to GPIO:"));
+  Serial.println(RADAR_RX_PIN);
+  Serial.print(F("Connect LD2410 radar RX to GPIO:"));
+  Serial.println(RADAR_TX_PIN);
+  Serial.print(F("LD2410 radar sensor initialising: "));
+  
+  if(radar.begin(RADAR_SERIAL))
+  {
+    Serial.println(F("OK"));
+    Serial.print(F("LD2410 firmware version: "));
+    Serial.print(radar.firmware_major_version);
+    Serial.print('.');
+    Serial.print(radar.firmware_minor_version);
+    Serial.print('.');
+    Serial.println(radar.firmware_bugfix_version, HEX);
+  }
+  else
+  {
+    Serial.println(F("not connected"));
+  }
+ 
 }

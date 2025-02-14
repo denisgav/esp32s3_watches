@@ -212,6 +212,58 @@
 		(layer "F.SilkS")
 		(uuid "6c7ff9cc-3f79-4d57-8c53-baade886a8e4")
 	)
+	(fp_text user "SCL"
+		(at 2.25 -5.5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5e851a97-518a-4969-a436-f4ed53419119")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at -0.5 -5.5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7a7272cb-d06f-4693-8f9e-cd33a35480ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SDA"
+		(at 4.75 -5.5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d6562fd8-577d-4f22-adda-3a22e116a08b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "VIN"
+		(at -3.25 -5.75 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fee76b6b-3f83-480d-b839-063acfc00dc0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(pad "1" thru_hole oval
 		(at -3.62 -10.6 90)
 		(size 2 1.6)
@@ -220,7 +272,7 @@
 		(remove_unused_layers no)
 		(uuid "e8a7b81d-0171-4f15-98ad-d795b07d9a82")
 	)
-	(pad "2" thru_hole oval
+	(pad "2" thru_hole rect
 		(at -1.08 -10.6 90)
 		(size 2 1.6)
 		(drill 1)

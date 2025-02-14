@@ -1,18 +1,16 @@
 #pragma once
 
-// SD card connection
-#define SDCARD_D0 47
-#define SDCARD_D1 21
-#define SDCARD_D2 42
-#define SDCARD_D3 41
-#define SDCARD_CLK 39
-#define SDCARD_CMD 40
+// SD CARD
+#define SD_CARD_MISO 13
+#define SD_CARD_SCK  12
+#define SD_CARD_MOSI 11
+#define SD_CARD_CS   10
 
-// // Buttons
-#define BUTTON_1 6
-#define BUTTON_2 7
-#define BUTTON_3 15
-#define BUTTON_4 16
+// Buttons
+#define BUTTON_SW_1 6
+#define BUTTON_SW_2 7
+#define BUTTON_SW_3 42
+#define BUTTON_SW_4 41
 
 // LEDS
 #define LED_1 1
@@ -32,7 +30,7 @@
 // #define WS2812_ONBOARD_NUM_LEDS 1
 // #define WS2812_ONBOARD_LED_PIN 48
 #define WS2812_CLOCK_NUM_LEDS 60
-#define WS2812_CLOCK_LED_PIN 38
+#define WS2812_CLOCK_LED_PIN 48
 
 // SSD 1306
 #define SSD1306_SCREEN_WIDTH   128 // OLED display width, in pixels
@@ -43,5 +41,5 @@
 // Radar
 #define MONITOR_SERIAL Serial
 #define RADAR_SERIAL Serial1
-#define RADAR_RX_PIN 18
-#define RADAR_TX_PIN 17
+#define RADAR_RX_PIN 15 // 15 on board is RX connect to TX on RADAR
+#define RADAR_TX_PIN 16 // 16 on board is TX connect to RX on RADAR

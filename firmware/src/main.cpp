@@ -4,12 +4,13 @@
 #include "board_defines.h"
 
 //--------------------------------
-// -        SD MMC
+// -        SD CARD
 //--------------------------------
 #include "FS.h"
-#include "SD_MMC.h"
+#include "SD.h"
+#include "SPI.h"
 
-void SD_MMC_Init();
+void SDCARD_Init();
 //--------------------------------
 
 //--------------------------------
@@ -67,10 +68,11 @@ void LD2410_Init();
 void setup()
 {
   Serial.begin(115200);
+  
+  SDCARD_Init();
 
   FastLED.addLeds<WS2812, WS2812_CLOCK_LED_PIN, RGB>(clock_leds, WS2812_CLOCK_NUM_LEDS);
 
-  SD_MMC_Init();
   BME280_Init();
   RTC3231_Init();
   SSD1306_Init();
@@ -125,6 +127,8 @@ void loop()
     }
   }
 
+  delay(1000);
+
 
   // onboard_leds[0] = CRGB::Red;
   // FastLED.show();
@@ -133,44 +137,6 @@ void loop()
 
   // onboard_leds[0] = CRGB::Black;
   // FastLED.show();
-}
-
-void SD_MMC_Init()
-{
-  SD_MMC.setPins(SDCARD_CLK, SDCARD_CMD, SDCARD_D0, SDCARD_D1, SDCARD_D2, SDCARD_D3);
-  if (!SD_MMC.begin("/sdcard", true, false, SDMMC_FREQ_DEFAULT, 5U)) // 1 data line. working
-  {
-    Serial.println("Card Mount Failed");
-    return;
-  }
-  uint8_t cardType = SD_MMC.cardType();
-
-  if (cardType == CARD_NONE)
-  {
-    Serial.println("No SD_MMC card attached");
-    return;
-  }
-
-  Serial.print("SD_MMC Card Type: ");
-  if (cardType == CARD_MMC)
-  {
-    Serial.println("MMC");
-  }
-  else if (cardType == CARD_SD)
-  {
-    Serial.println("SDSC");
-  }
-  else if (cardType == CARD_SDHC)
-  {
-    Serial.println("SDHC");
-  }
-  else
-  {
-    Serial.println("UNKNOWN");
-  }
-
-  uint64_t cardSize = SD_MMC.cardSize() / (1024 * 1024);
-  Serial.printf("SD_MMC Card Size: %lluMB\n", cardSize);
 }
 
 void BME280_Init()
@@ -252,20 +218,42 @@ void RTC3231_print_values()
 {
   DateTime now = rtc.now();
 
-  Serial.print(now.year(), DEC);
-  Serial.print('/');
-  Serial.print(now.month(), DEC);
-  Serial.print('/');
-  Serial.print(now.day(), DEC);
-  Serial.print(" (");
-  Serial.print(daysOfTheWeek[now.dayOfTheWeek()]);
-  Serial.print(") ");
-  Serial.print(now.hour(), DEC);
-  Serial.print(':');
-  Serial.print(now.minute(), DEC);
-  Serial.print(':');
-  Serial.print(now.second(), DEC);
-  Serial.println();
+  // Serial.print(now.year(), DEC);
+  // Serial.print('/');
+  // Serial.print(now.month(), DEC);
+  // Serial.print('/');
+  // Serial.print(now.day(), DEC);
+  // Serial.print(" (");
+  // Serial.print(daysOfTheWeek[now.dayOfTheWeek()]);
+  // Serial.print(") ");
+  // Serial.print(now.hour(), DEC);
+  // Serial.print(':');
+  // Serial.print(now.minute(), DEC);
+  // Serial.print(':');
+  // Serial.print(now.second(), DEC);
+  // Serial.println();
+
+  display.clearDisplay();
+
+  display.setTextSize(1);      // Normal 1:1 pixel scale
+  display.setTextColor(SSD1306_WHITE); // Draw white text
+  display.setCursor(0, 0);     // Start at top-left corner
+
+  display.print(now.year(), DEC);
+  display.print('/');
+  display.print(now.month(), DEC);
+  display.print('/');
+  display.println(now.day(), DEC);
+  display.println(daysOfTheWeek[now.dayOfTheWeek()]);
+  display.print(now.hour(), DEC);
+  display.print(':');
+  display.print(now.minute(), DEC);
+  display.print(':');
+  display.println(now.second(), DEC);
+
+  // Show initial display buffer contents on the screen --
+  // the library initializes this with an Adafruit splash screen.
+  display.display();
 }
 
 void SSD1306_Init(){
@@ -312,4 +300,15 @@ void LD2410_Init()
     Serial.println(F("not connected"));
   }
  
+}
+
+
+void SDCARD_Init(){
+  if(!SD.begin(SD_CARD_CS)){
+    while(true){
+      Serial.println("Card Mount Failed");
+      delay (1000);
+    }
+    return;
+  }
 }

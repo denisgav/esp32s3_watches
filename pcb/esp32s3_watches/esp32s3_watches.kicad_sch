@@ -81,6 +81,44 @@
 			)
 		)
 	)
+	(sheet
+		(at 36.83 22.86)
+		(size 52.07 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c070ac67-3013-4151-b895-e8fbaca43533")
+		(property "Sheetname" "power"
+			(at 36.83 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 36.83 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32s3_watches"
+				(path "/546746d8-9087-4747-b922-4ea0efc98497"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

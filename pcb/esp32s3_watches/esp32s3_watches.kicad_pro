@@ -594,6 +594,10 @@
     [
       "c070ac67-3013-4151-b895-e8fbaca43533",
       "power"
+    ],
+    [
+      "86d5c1be-317b-4ddb-a646-9d133da2ac94",
+      "PCF8563"
     ]
   ],
   "text_variables": {}

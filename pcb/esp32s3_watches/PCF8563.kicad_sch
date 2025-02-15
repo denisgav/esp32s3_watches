@@ -1377,12 +1377,6 @@
 		(uuid "a5e5fe48-2058-420d-aa9d-7ea955b49791")
 	)
 	(junction
-		(at 76.2 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bf2c0e92-fb65-4d14-8d5d-4705a2c125ee")
-	)
-	(junction
 		(at 66.04 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1556,7 +1550,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 69.85) (xy 88.9 60.96)
+			(xy 88.9 60.96) (xy 88.9 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1586,7 +1580,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 60.96) (xy 57.15 63.5)
+			(xy 44.45 60.96) (xy 44.45 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1706,16 +1700,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 88.9) (xy 76.2 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ae355d5-2bd6-4f0b-bee1-dafa1ecc1f7a")
-	)
-	(wire
-		(pts
 			(xy 125.73 48.26) (xy 125.73 45.72)
 		)
 		(stroke
@@ -1736,7 +1720,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 60.96) (xy 57.15 60.96)
+			(xy 53.34 60.96) (xy 44.45 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1816,7 +1800,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 60.96) (xy 78.74 60.96)
+			(xy 63.5 60.96) (xy 78.74 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1873,6 +1857,46 @@
 			(type default)
 		)
 		(uuid "fbffd772-0764-4293-aaed-e4520b7fbae1")
+	)
+	(label "PCF_VDD"
+		(at 88.9 69.85 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07f5c724-cb2f-4ebd-8bdb-be273fa27275")
+	)
+	(label "OSCI"
+		(at 62.23 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b605eff-d3f4-45f8-8dac-e33fefb514e0")
+	)
+	(label "OSCO"
+		(at 71.12 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cd46841-bc2e-40ce-979a-26cb3b723168")
+	)
+	(label "VBAT"
+		(at 69.85 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e58ba73f-a61a-473c-89d3-a48c7916409d")
 	)
 	(global_label "PCF8563_INT"
 		(shape input)
@@ -1942,7 +1966,7 @@
 	)
 	(symbol
 		(lib_id "esp32s3_watches:BC2032-E2")
-		(at 71.12 60.96 0)
+		(at 58.42 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1951,7 +1975,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b1f4c43-1100-458f-bd67-534d9a7dfc68")
 		(property "Reference" "BT400"
-			(at 71.4629 53.34 0)
+			(at 58.7629 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,7 +1983,7 @@
 			)
 		)
 		(property "Value" "BC2032-E2"
-			(at 71.4629 55.88 0)
+			(at 58.7629 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,7 +1991,7 @@
 			)
 		)
 		(property "Footprint" "esp32s3_watches:MPD_BC2032-E2"
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1977,7 +2001,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +2010,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1995,7 +2019,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,7 +2029,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,7 +2039,7 @@
 			)
 		)
 		(property "Manufacturer" "MYOUNG"
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2025,7 +2049,7 @@
 			)
 		)
 		(property "Manufacturer Product Number" "BS-02-A1AJ010"
-			(at 71.12 60.96 0)
+			(at 58.42 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2679,7 +2703,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 63.5 0)
+		(at 44.45 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2687,7 +2711,7 @@
 		(dnp no)
 		(uuid "757220a8-01cc-4dd4-8c26-20145944fa3c")
 		(property "Reference" "#PWR068"
-			(at 57.15 69.85 0)
+			(at 44.45 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2696,7 +2720,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 61.214 65.278 0)
+			(at 48.514 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,7 +2728,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 63.5 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +2737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 63.5 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2746,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 63.5 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3188,72 +3212,6 @@
 			(project ""
 				(path "/546746d8-9087-4747-b922-4ea0efc98497/86d5c1be-317b-4ddb-a646-9d133da2ac94"
 					(reference "R401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d916f540-1326-4009-ad0e-f14041e7e143")
-		(property "Reference" "#PWR067"
-			(at 76.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "868619c8-33d5-4dfc-a538-27f1ed1602d3")
-		)
-		(instances
-			(project "esp32s3_watches"
-				(path "/546746d8-9087-4747-b922-4ea0efc98497/86d5c1be-317b-4ddb-a646-9d133da2ac94"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)

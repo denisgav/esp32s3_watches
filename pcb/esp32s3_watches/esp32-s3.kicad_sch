@@ -9182,7 +9182,6 @@
 		)
 	)
 	(symbol
-		(lib_name "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(lib_id "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(at 166.37 101.6 0)
 		(unit 1)
@@ -9836,7 +9835,6 @@
 		)
 	)
 	(symbol
-		(lib_name "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(lib_id "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(at 232.41 101.6 0)
 		(unit 1)
@@ -9910,7 +9908,6 @@
 		)
 	)
 	(symbol
-		(lib_name "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(lib_id "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(at 266.7 101.6 0)
 		(unit 1)
@@ -12393,7 +12390,6 @@
 		)
 	)
 	(symbol
-		(lib_name "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(lib_id "esp32s3_watches:SW_PUSH_6mm_H5mm")
 		(at 199.39 101.6 0)
 		(unit 1)

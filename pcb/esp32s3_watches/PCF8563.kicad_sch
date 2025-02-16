@@ -1860,6 +1860,7 @@
 	)
 	(label "PCF_VDD"
 		(at 88.9 69.85 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1870,6 +1871,7 @@
 	)
 	(label "OSCI"
 		(at 62.23 74.93 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1880,6 +1882,7 @@
 	)
 	(label "OSCO"
 		(at 71.12 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1890,6 +1893,7 @@
 	)
 	(label "VBAT"
 		(at 69.85 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

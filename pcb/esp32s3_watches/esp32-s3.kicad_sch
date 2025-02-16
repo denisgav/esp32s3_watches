@@ -6254,6 +6254,7 @@
 	)
 	(label "LD2410_VCC"
 		(at 168.91 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

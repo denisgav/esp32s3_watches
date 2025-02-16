@@ -1,202 +1,23 @@
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'win32'
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.11.5 (main, Nov  3 2024, 06:58:22) [MSC v.1939 64 bit (AMD64)]'
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.7
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x000001F350C50430>
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H4 on root level
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H3 on root level
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H2 on root level
-02-16 09:55:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H1 on root level
-02-16 09:55:12 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: D
-02-16 09:55:12 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 200
-02-16 09:55:12 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'win32'
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.11.5 (main, Nov  3 2024, 06:58:22) [MSC v.1939 64 bit (AMD64)]'
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.7
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x00000280AF64FD00>
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H1 on root level
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H3 on root level
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H4 on root level
+02-16 11:10:26 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H2 on root level
+02-16 11:10:28 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: D
+02-16 11:10:28 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 200
+02-16 11:10:28 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
 ['D200', 'D201', 'D202', 'D203', 'D204', 'D205', 'D206', 'D207', 'D208', 'D209', 'D210', 'D211', 'D212', 'D213', 'D214', 'D215', 'D216', 'D217', 'D218', 'D219', 'D220', 'D221', 'D222', 'D223', 'D224', 'D225', 'D226', 'D227', 'D228', 'D229', 'D230', 'D231', 'D232', 'D233', 'D234', 'D235', 'D236', 'D237', 'D238', 'D239', 'D240', 'D241', 'D242', 'D243', 'D244', 'D245', 'D246', 'D247', 'D248', 'D249', 'D250', 'D251', 'D252', 'D253', 'D254', 'D255', 'D256', 'D257', 'D258', 'D259']
-02-16 09:55:12 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(240, 240, 240, 255)
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 490:'42.5'
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 542:Preparing config for reference circular
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 556:Saving config file
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 558:Saved the config file
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 901:Footprints to place:
+02-16 11:10:28 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(240, 240, 240, 255)
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 490:'5'
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 549:Preparing config for reference matrix
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 556:Saving config file
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 558:Saved the config file
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 901:Footprints to place:
 ['D200', 'D201', 'D202', 'D203', 'D204', 'D205', 'D206', 'D207', 'D208', 'D209', 'D210', 'D211', 'D212', 'D213', 'D214', 'D215', 'D216', 'D217', 'D218', 'D219', 'D220', 'D221', 'D222', 'D223', 'D224', 'D225', 'D226', 'D227', 'D228', 'D229', 'D230', 'D231', 'D232', 'D233', 'D234', 'D235', 'D236', 'D237', 'D238', 'D239', 'D240', 'D241', 'D242', 'D243', 'D244', 'D245', 'D246', 'D247', 'D248', 'D249', 'D250', 'D251', 'D252', 'D253', 'D254', 'D255', 'D256', 'D257', 'D258', 'D259']
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 330:Starting placing with circular layout
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 340:reference footprint position at: VECTOR2I(75000000, 27500000)
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 345:rotation center at: (75000000, 70000000.0)
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: D200 has property "Keep upright" rotation might not look as intended
-02-16 09:55:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 916:Placing complete
+02-16 11:10:30 com_github_MitjaNemec_PlaceFootprints.place_footprints 398:Starting placing with matrix layout
+02-16 11:10:31 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 971:Placing complete

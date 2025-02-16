@@ -1,0 +1,7763 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "57acaaa8-6061-47b2-8290-02cdc419ed72")
+	(paper "A4")
+	(lib_symbols
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03c8579d-0f54-497b-a62d-84adb0ca50aa")
+		(property "Reference" "D127"
+			(at 125.984 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "316acd56-926e-4664-ac21-f82d15275c58")
+		)
+		(pin "1"
+			(uuid "bd0f2380-3d11-4c63-b825-63ef2d4d520f")
+		)
+		(pin "3"
+			(uuid "33faeefb-eb69-49de-8e60-910ed9554e3e")
+		)
+		(pin "4"
+			(uuid "20386bd7-9de3-4441-b8ea-1957f9005120")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05be168a-4ebd-492c-9a34-5cf6b01758b4")
+		(property "Reference" "D95"
+			(at 90.424 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "34e3eee3-e216-49b6-80e6-428354181424")
+		)
+		(pin "1"
+			(uuid "6cb16f2c-1afc-4269-b8d3-9727d332a9cf")
+		)
+		(pin "3"
+			(uuid "05c08842-c11a-43b8-8c39-8c3115b47cb6")
+		)
+		(pin "4"
+			(uuid "647fda59-3d32-458c-84c8-50c533b14b7d")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D95")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05f610a1-10cf-421d-8a5d-5e5d076eb9d9")
+		(property "Reference" "D115"
+			(at 54.864 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bbdf88a3-6871-4c63-a2c3-a6c122615a92")
+		)
+		(pin "1"
+			(uuid "bdc1c3e5-2dc3-4cf8-b040-177dad9e33bf")
+		)
+		(pin "3"
+			(uuid "2aab2e31-91d5-4b8c-8640-573eb68ea734")
+		)
+		(pin "4"
+			(uuid "b01a9131-ab57-45d6-967b-0dd0a5d22fb2")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0782c8c4-3caf-4161-baef-b761fbbdf57e")
+		(property "Reference" "D80"
+			(at 197.104 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9ae12a2-589d-4219-bf73-c2f57ce57193")
+		)
+		(pin "1"
+			(uuid "088292d7-1c3f-426b-a541-81a990652dfb")
+		)
+		(pin "3"
+			(uuid "cb88c384-b378-40d9-8a36-996b21c7e0ec")
+		)
+		(pin "4"
+			(uuid "7c5a4bb5-325e-4e69-92ee-789ab1b105b8")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ab82469-15ce-48f8-8020-04b379d99766")
+		(property "Reference" "D148"
+			(at 217.17 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c27c2796-1d18-4016-8183-f3cd205c5f9d")
+		)
+		(pin "1"
+			(uuid "ce76c993-53c6-4cf3-8830-3bbcde9586e3")
+		)
+		(pin "3"
+			(uuid "67a2dabe-fd86-4a83-9fc5-d3f00c4eb05e")
+		)
+		(pin "4"
+			(uuid "f8260d47-aeec-4cfe-b363-6a5a079ca8ec")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 185.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1348ce31-27b0-4275-9a1b-98ba1d579c76")
+		(property "Reference" "D136"
+			(at 217.17 181.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 180.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9580863f-e84e-48ef-98c9-464f39d0f764")
+		)
+		(pin "1"
+			(uuid "f444a74c-4590-45d1-9235-7f355b8259d9")
+		)
+		(pin "3"
+			(uuid "a902fb7e-93e6-4287-8e31-59e55f072183")
+		)
+		(pin "4"
+			(uuid "8c6e7a38-050f-419d-b08a-7003dd40f6b7")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b0f439c-45ee-4547-bcf9-68d281a9fcc6")
+		(property "Reference" "D153"
+			(at 217.17 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a424aed4-5fb8-47df-99f7-9c029e590afe")
+		)
+		(pin "1"
+			(uuid "dd854b30-9ce6-4ece-b92a-3971cc1c8b05")
+		)
+		(pin "3"
+			(uuid "28f4ec68-9289-49ac-9639-1cebabe99dc0")
+		)
+		(pin "4"
+			(uuid "f3f91b43-5fab-4081-b140-7aa8f4dcb347")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D153")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d869622-1815-4615-ac3e-b79103a35f24")
+		(property "Reference" "D111"
+			(at 37.084 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32eeb0f5-3f22-47a7-9625-397787563e0f")
+		)
+		(pin "1"
+			(uuid "1c62e320-280d-4d84-b176-fefe654b64f0")
+		)
+		(pin "3"
+			(uuid "240c4317-5ac6-4bef-8bb7-1f71051d3a93")
+		)
+		(pin "4"
+			(uuid "eb1ef87f-b7df-40a8-94a8-7307c5c050fb")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "202f03f4-369b-4c48-94d2-43d39a6fb7fe")
+		(property "Reference" "D132"
+			(at 179.324 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d49520d7-a44b-4b6a-9a46-d9453a83c5d5")
+		)
+		(pin "1"
+			(uuid "7daed9a2-4a14-4999-806d-68e91bfd5326")
+		)
+		(pin "3"
+			(uuid "4f7c9bc2-44f5-4108-978b-0e4e31a58130")
+		)
+		(pin "4"
+			(uuid "b2dbdf5a-7c38-446e-83a9-503469bf18b6")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21986a03-6f75-4939-9378-72dcaaab9304")
+		(property "Reference" "D126"
+			(at 125.984 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "44744286-dde7-407a-9752-ac5e64c04201")
+		)
+		(pin "1"
+			(uuid "292efb81-a76d-4cb9-b837-c9a9fc731008")
+		)
+		(pin "3"
+			(uuid "09a00a57-d32d-43c5-95ca-726df384008e")
+		)
+		(pin "4"
+			(uuid "c075c235-7463-427a-ac89-1c857fc48176")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24789550-e77e-4b5e-8c5b-0a333c07dc7d")
+		(property "Reference" "D158"
+			(at 234.95 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 38.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "626c318c-e298-4165-a9ad-de907cfb6530")
+		)
+		(pin "1"
+			(uuid "35a1d07a-851b-4217-bbb1-3750cd53d37d")
+		)
+		(pin "3"
+			(uuid "a7df15fc-b2a3-41c8-988f-2184135e7135")
+		)
+		(pin "4"
+			(uuid "fbc2bcd5-9334-4b36-af7c-5ca74d7a8931")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D158")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24902b9b-8b64-4165-b9fb-29767bb3e216")
+		(property "Reference" "D121"
+			(at 90.424 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "76355514-3f3a-4ccb-9cd1-fae516dd8542")
+		)
+		(pin "1"
+			(uuid "fcdc4a84-af8e-45fe-8489-575476cc3a38")
+		)
+		(pin "3"
+			(uuid "d07ffba1-f4ec-4b6c-a1fa-d5b2f8bc6fd5")
+		)
+		(pin "4"
+			(uuid "a8630c49-9b84-43e7-bdae-6bcd86674fb5")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "267d11b1-f654-4f7f-8a13-7d74dc83e9e9")
+		(property "Reference" "D72"
+			(at 54.864 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c825c083-494f-4f83-b461-a4b3258439d5")
+		)
+		(pin "1"
+			(uuid "94bda211-4d66-405a-ba75-42a91aae87b5")
+		)
+		(pin "3"
+			(uuid "3ebb0a95-4e2d-4e60-991c-86c45e9e4883")
+		)
+		(pin "4"
+			(uuid "1d8709f0-f1fb-4811-8d95-7259942f9d3f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26a5a3bb-6b2b-49c9-a208-51917ca4095a")
+		(property "Reference" "D128"
+			(at 143.764 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3f328cc-de86-4a27-bc97-d1cf486600ec")
+		)
+		(pin "1"
+			(uuid "a1cf40ab-bd34-4227-9d58-b7c6dabf2d65")
+		)
+		(pin "3"
+			(uuid "209cccee-b853-47ea-8bd5-c5558ec1bc18")
+		)
+		(pin "4"
+			(uuid "3be4edcf-61e8-4c38-b298-9d867a2990d1")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2803e281-885b-4634-922c-ae640ea7f0e0")
+		(property "Reference" "D110"
+			(at 197.104 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12d700e6-ac6d-46a8-a529-b1b5ef78b030")
+		)
+		(pin "1"
+			(uuid "1b759aed-55d0-4a3f-8fb7-eb781d066fcf")
+		)
+		(pin "3"
+			(uuid "a097fe33-782c-4afb-a07e-c7622d578425")
+		)
+		(pin "4"
+			(uuid "49b9aeb9-b70d-47e8-be57-18ce686c6f36")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2853e844-4a42-4b4d-ab98-8b49729ab0f4")
+		(property "Reference" "D151"
+			(at 217.17 92.456 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fbf91de3-a875-46d2-bcc2-ee9e51d72e37")
+		)
+		(pin "1"
+			(uuid "ff79d3e0-b4d7-4caf-95cd-3e7c71dc3e8d")
+		)
+		(pin "3"
+			(uuid "69fcd4db-7ba1-44d2-bc59-19e3733f9bc3")
+		)
+		(pin "4"
+			(uuid "95245a5c-d17b-4f38-8c72-18e9c2e41710")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 257.81 167.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c243146-209a-4e1f-aa27-7fc2f1fbcce4")
+		(property "Reference" "D141"
+			(at 251.46 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 264.16 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 265.43 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 267.335 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 257.81 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66bd28d4-8571-421d-bfc6-55f55a5e6980")
+		)
+		(pin "1"
+			(uuid "aa510d89-6105-410e-b01e-3f130e5e9fb3")
+		)
+		(pin "3"
+			(uuid "389d24ce-a7c8-4008-a1a6-b1d8b3102308")
+		)
+		(pin "4"
+			(uuid "2ad6ba38-b311-4622-9c71-b4120edc5b1b")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c922b97-8e23-48da-b011-297a16dd24c8")
+		(property "Reference" "D76"
+			(at 125.984 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "86c00cb9-1a0c-4b32-a83a-132010c539e6")
+		)
+		(pin "1"
+			(uuid "bd13cbfe-d244-44f0-b84e-6f964af673e5")
+		)
+		(pin "3"
+			(uuid "3d21dfd2-0acf-44cc-8516-52606a40ff0b")
+		)
+		(pin "4"
+			(uuid "04afba4a-60fb-48e2-89fc-22bf74109736")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2dc6f4e6-90b8-426b-9b00-be82a68bc271")
+		(property "Reference" "D152"
+			(at 234.95 92.456 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9e079ae-378d-4ecf-a3b6-1718bdb80722")
+		)
+		(pin "1"
+			(uuid "5adefb1f-b733-4caf-8d11-84bd90b633c7")
+		)
+		(pin "3"
+			(uuid "04bec4d9-f399-4c30-8328-f0f5d930853b")
+		)
+		(pin "4"
+			(uuid "83b5f086-daab-41a5-b106-f39befd67aaa")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33fbf3b1-c197-403a-b653-2aee140145aa")
+		(property "Reference" "D106"
+			(at 161.544 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "075f5787-751e-4c92-9494-c11b3f3b20eb")
+		)
+		(pin "1"
+			(uuid "a1c1c19a-d1e7-4f84-ba32-f4339d5d9839")
+		)
+		(pin "3"
+			(uuid "a4785b8d-fd5d-4d45-bed6-fe842046001b")
+		)
+		(pin "4"
+			(uuid "35f66c42-e1b1-40cb-8929-be7009e46bf4")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35abd258-6474-4291-8db8-68c64cc4dba4")
+		(property "Reference" "D97"
+			(at 90.424 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2fc4b0cc-4d3e-498e-ab5b-222df7236ba9")
+		)
+		(pin "1"
+			(uuid "aaa323c8-2057-4fd3-a449-ea243feba48d")
+		)
+		(pin "3"
+			(uuid "be7f93e2-14c3-4c77-a50d-b0b6829633f2")
+		)
+		(pin "4"
+			(uuid "b657d8ae-3fd1-45b0-a803-607d49591413")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3894e74c-4e3f-4fe1-a6d6-e026e82ed2e7")
+		(property "Reference" "D104"
+			(at 143.764 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "44e8b309-4547-4fde-a706-d37c485ee48b")
+		)
+		(pin "1"
+			(uuid "2ea46511-28e6-4d58-9621-bf64b19855c0")
+		)
+		(pin "3"
+			(uuid "d7fdd8d6-3c28-41fc-bffb-24d322d105cb")
+		)
+		(pin "4"
+			(uuid "574ee049-d3d4-4a1f-8ced-0ed81706b447")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ac63fdc-0bc3-44a8-81be-57803e8fff52")
+		(property "Reference" "D63"
+			(at 72.644 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b1c3cbdf-7000-48ea-8005-72a47eda6eb0")
+		)
+		(pin "1"
+			(uuid "c47f4a73-da05-433b-abfd-b7982c423bdb")
+		)
+		(pin "3"
+			(uuid "bbd50615-507c-4820-b7ab-a007fb40528e")
+		)
+		(pin "4"
+			(uuid "565ec382-b37d-466a-9e64-224a0fb05779")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f36aae7-87df-4871-8b8d-35e903dda58a")
+		(property "Reference" "D78"
+			(at 161.544 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0454240a-11a5-403a-b958-5465da14ef06")
+		)
+		(pin "1"
+			(uuid "ee1c110a-b002-4787-a606-0de0232f701b")
+		)
+		(pin "3"
+			(uuid "26d84eda-5817-4f9b-988b-3897f5138670")
+		)
+		(pin "4"
+			(uuid "07ccc5a3-9d6f-4575-86e2-d28511d34e0a")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "405b7ed3-9448-405f-8014-451e5f7b6437")
+		(property "Reference" "D131"
+			(at 161.544 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67edc687-4ad3-44c0-9d5c-0aae6cd3eb76")
+		)
+		(pin "1"
+			(uuid "c38002b6-1139-4efd-bd51-4ceca5820bf6")
+		)
+		(pin "3"
+			(uuid "fcf8b5b2-d44a-4bd0-b58b-a17f26230bfd")
+		)
+		(pin "4"
+			(uuid "1505cbca-12d2-496e-8f29-bd062485b7a9")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4167f2e4-019e-40c5-9554-a704d03c9c9b")
+		(property "Reference" "D124"
+			(at 108.204 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f066f88-5ea0-4afb-9057-61d185832616")
+		)
+		(pin "1"
+			(uuid "6e88f443-b616-4bd8-8d1a-f7b181467383")
+		)
+		(pin "3"
+			(uuid "205e7e6b-2030-4179-8215-70a6ad981a93")
+		)
+		(pin "4"
+			(uuid "0f979f1e-fa38-4dee-ab5a-c22e858c9da9")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43fe50e9-e3bc-4c20-a6a0-a7487906cd79")
+		(property "Reference" "D75"
+			(at 108.204 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "543825d4-5a14-47c3-b700-6fb661e7987f")
+		)
+		(pin "1"
+			(uuid "7a09c87d-5967-4778-b8df-c14567244024")
+		)
+		(pin "3"
+			(uuid "f6913df6-abc4-4b05-b896-d90db2542ce8")
+		)
+		(pin "4"
+			(uuid "9e763bfa-9bb8-455c-959a-1335566f3bf1")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4874fb03-c075-40fd-a95e-947d19c950e9")
+		(property "Reference" "D133"
+			(at 179.324 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af2da06c-7367-443a-b4c1-06d2ef689edb")
+		)
+		(pin "1"
+			(uuid "f23e3d28-1f03-4932-b394-eb565d32e48d")
+		)
+		(pin "3"
+			(uuid "e0b24e8d-9553-4bf6-8dad-95548d022b02")
+		)
+		(pin "4"
+			(uuid "58b95196-cf69-46b4-becd-92cc7c92a9b9")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d3a6070-0d55-48eb-8c99-1be02278286e")
+		(property "Reference" "D89"
+			(at 54.864 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d5cbf4a-5792-4fc5-97c3-24be8fc4ac50")
+		)
+		(pin "1"
+			(uuid "daf79430-a078-470e-8cf8-6e9e14c7fc82")
+		)
+		(pin "3"
+			(uuid "09a97991-cdaa-49a3-b357-49665697c9a6")
+		)
+		(pin "4"
+			(uuid "ec5df36c-3cbf-4676-b911-11ff089cff47")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fc77318-d9d4-43af-852f-78fd523654c3")
+		(property "Reference" "D154"
+			(at 234.95 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc60e7c1-8989-4ea5-bb3b-e758fc0ac1e0")
+		)
+		(pin "1"
+			(uuid "10994938-cda1-47b4-9beb-2192a0d75ff0")
+		)
+		(pin "3"
+			(uuid "65e0c683-e8c7-47b9-80de-1354648631eb")
+		)
+		(pin "4"
+			(uuid "ea12c54e-693c-4f8f-9321-81c6de08aa00")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 185.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57f28059-6788-4281-9741-3dd5e38d6e6e")
+		(property "Reference" "D137"
+			(at 234.95 181.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 180.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "edbc621e-04a3-4326-9993-901502b5a442")
+		)
+		(pin "1"
+			(uuid "0344ed2c-95cc-491f-8258-fd4e1f367165")
+		)
+		(pin "3"
+			(uuid "3afd3632-4330-425b-af83-dca340a7317a")
+		)
+		(pin "4"
+			(uuid "7beca3a0-154d-454f-b36e-fb489f2dce10")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 257.81 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58d74b82-179b-4fae-b973-470989e70cdf")
+		(property "Reference" "D144"
+			(at 251.46 145.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 264.16 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 265.43 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 267.335 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 257.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dbad5054-fff3-426f-a17b-a272be212dde")
+		)
+		(pin "1"
+			(uuid "093e4a1a-4723-45ca-9e10-0e279a2d6918")
+		)
+		(pin "3"
+			(uuid "82fcf920-0b49-48a1-b34f-c11cae308415")
+		)
+		(pin "4"
+			(uuid "34c71bf0-c829-42ab-b0ad-0643f83b0900")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bdbe839-698c-4cab-9a19-9d2ac8fa34d2")
+		(property "Reference" "D157"
+			(at 217.17 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 38.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ceff9e6-79c4-4cb2-b99e-764a1a22aa02")
+		)
+		(pin "1"
+			(uuid "861aad5e-4aea-4a48-af1d-146afda7d859")
+		)
+		(pin "3"
+			(uuid "3a479a74-bea1-4f4f-9768-81859d2f9bbf")
+		)
+		(pin "4"
+			(uuid "4a5266f5-b507-4558-974a-0466b6fee75f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D157")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c6d49b8-9035-45fe-8da1-a599feef2603")
+		(property "Reference" "D84"
+			(at 90.424 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "278f2be4-20ba-46d1-84cc-c69e7d482fd9")
+		)
+		(pin "1"
+			(uuid "d7fc7f54-b149-4ed2-97ad-4bc5cb72dd35")
+		)
+		(pin "3"
+			(uuid "d2e622e7-6cf0-4d19-97ae-e8d7cec3e579")
+		)
+		(pin "4"
+			(uuid "69b6b1a8-0178-41cc-a401-eac7681ff2e9")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d638b36-ef62-4e40-9744-63d2f34bdeb1")
+		(property "Reference" "D130"
+			(at 161.544 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "97ad7f94-8ecf-41eb-81a2-3d1a5c4910f1")
+		)
+		(pin "1"
+			(uuid "05d8a4b2-9ba1-4590-8e56-4ef99b536eff")
+		)
+		(pin "3"
+			(uuid "3076fb55-7167-4c57-9c88-3fb7fb911148")
+		)
+		(pin "4"
+			(uuid "2d6a3e01-8cd6-402a-b14b-2cde1459e39b")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e0b417c-e65b-4204-9807-082029fdb77f")
+		(property "Reference" "D156"
+			(at 234.95 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ede3e491-5700-4797-91ca-a2cdaf34f7af")
+		)
+		(pin "1"
+			(uuid "a7ba513c-5ff0-4076-8175-b706a7fb3db9")
+		)
+		(pin "3"
+			(uuid "769c14c3-6d86-4c6d-a7ad-5a3c9fb97d23")
+		)
+		(pin "4"
+			(uuid "cf79e01f-3c59-4747-9847-247584e6e47e")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e4048d3-5131-4748-b635-f38ed108c3c3")
+		(property "Reference" "D112"
+			(at 37.084 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45f37e28-1f61-480a-9fe7-1d62ccfe87d3")
+		)
+		(pin "1"
+			(uuid "daaee3cd-3b65-48b3-bb11-fa9f8ab0ff05")
+		)
+		(pin "3"
+			(uuid "f850d567-e15e-4cbb-9301-6d21c4072f9e")
+		)
+		(pin "4"
+			(uuid "07e7cca7-f3c7-4e3e-a6a1-2e492ed55bb4")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 167.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f767c7b-60cb-482d-a0fb-bf488f2dbeba")
+		(property "Reference" "D139"
+			(at 217.17 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a7a932c3-ab8b-4ae7-94af-f6ffd73056b8")
+		)
+		(pin "1"
+			(uuid "f06cae1b-5b61-4bfb-904a-a07f05e6976e")
+		)
+		(pin "3"
+			(uuid "54492409-6475-4d51-b3a1-75ad33bea9dd")
+		)
+		(pin "4"
+			(uuid "741c208d-afd9-45c4-88e4-ff24c2ccb6d8")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6308fda9-da3b-4691-aea9-584f0496db2d")
+		(property "Reference" "D98"
+			(at 108.204 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cbf21ebf-4daf-4b4e-a2ab-c098c9bab35a")
+		)
+		(pin "1"
+			(uuid "8e7973b2-cd78-4524-b32d-b1a70bc32f23")
+		)
+		(pin "3"
+			(uuid "13f0e57b-4454-4b05-92e0-8416b0a6d586")
+		)
+		(pin "4"
+			(uuid "e6cc2a46-8d52-4442-b3f5-c8e33edc88cb")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "636dcfd8-f983-491e-baaf-254bb9a8f8ca")
+		(property "Reference" "D83"
+			(at 72.644 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48a1af04-67c6-404a-bccb-649c1d2c42ed")
+		)
+		(pin "1"
+			(uuid "ed1c55a0-8170-4fcc-a1c1-7cb2d9d711b3")
+		)
+		(pin "3"
+			(uuid "0e78fb34-0959-46b8-b560-e300fd276668")
+		)
+		(pin "4"
+			(uuid "185047cc-f5e2-45a8-ba76-cd80c06faf12")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64f3f584-0b49-44f4-a2e1-84405670a4e3")
+		(property "Reference" "D68"
+			(at 161.544 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "09961e5f-c690-48aa-a8f9-94d8c0006e7b")
+		)
+		(pin "1"
+			(uuid "d6ef6376-96a2-4666-8740-de23762804f2")
+		)
+		(pin "3"
+			(uuid "6a97290c-472b-41a7-8a7f-cbc31323eec9")
+		)
+		(pin "4"
+			(uuid "fa1003e1-6337-43f5-9fa8-79f25af21ff8")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6be50489-9888-4373-a924-053aac2c5b3c")
+		(property "Reference" "D81"
+			(at 37.084 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc2f5151-b668-4a32-b71a-d94448cde3e3")
+		)
+		(pin "1"
+			(uuid "ce9fe523-245a-418d-81e4-867dc0982ce4")
+		)
+		(pin "3"
+			(uuid "29720dee-d03f-4264-ac14-32d640ae548b")
+		)
+		(pin "4"
+			(uuid "9825123f-ec3e-49ec-97f2-6385d08d816d")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e09df71-8495-4ae4-bae9-f6f11474be5b")
+		(property "Reference" "D82"
+			(at 54.864 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82c466d7-a536-4df6-afda-fcd065c16cb5")
+		)
+		(pin "1"
+			(uuid "f7e55acf-f6fb-4ad4-bea2-0870f6244fe0")
+		)
+		(pin "3"
+			(uuid "6aaeac84-448e-496a-93d9-083b8610853d")
+		)
+		(pin "4"
+			(uuid "54d310cd-59bb-42f8-81bb-145d7450db11")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "755bce59-965d-4633-8e35-2519967aa1f5")
+		(property "Reference" "D92"
+			(at 72.644 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7df35ca-2c5a-4459-8213-9c4d66a2991f")
+		)
+		(pin "1"
+			(uuid "7f2208b5-2162-492d-9887-b3a395838e72")
+		)
+		(pin "3"
+			(uuid "de88021e-ea33-4c50-8161-10b8fed29d90")
+		)
+		(pin "4"
+			(uuid "09ba31df-a3ca-4774-83cb-f1ad7e2bba4f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76937754-8489-43d3-bc72-61a9483485d9")
+		(property "Reference" "D118"
+			(at 72.644 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "97614fcb-54fd-439a-9119-7de6b68c46a8")
+		)
+		(pin "1"
+			(uuid "89188205-6cb8-466a-9cea-2ef7b16826df")
+		)
+		(pin "3"
+			(uuid "48614ee3-0f6a-4d57-8fd2-26ff0e09b604")
+		)
+		(pin "4"
+			(uuid "8b51da40-9bcf-4600-8b86-47a3bbe69aac")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a586f97-5b9d-4eb2-ab17-854b13e9a4d8")
+		(property "Reference" "D117"
+			(at 72.644 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43998b51-6f09-41f4-a4f6-03b6e6aed400")
+		)
+		(pin "1"
+			(uuid "23c05e8e-5508-4bbb-93ca-340c893ce37c")
+		)
+		(pin "3"
+			(uuid "046c622f-4a2d-48e3-b90f-8b96cde1d40d")
+		)
+		(pin "4"
+			(uuid "2fbf5cf6-ff36-452c-90c6-e0090c88d3f2")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bf4ea91-cc2e-425f-be91-2e6b7b4e0729")
+		(property "Reference" "D69"
+			(at 179.324 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d68fadb-e492-43d1-8d0f-8ae9834bdcb7")
+		)
+		(pin "1"
+			(uuid "1271ff7b-5ee8-49db-9172-2d65db4add37")
+		)
+		(pin "3"
+			(uuid "e42320cd-2de2-4b7e-ae77-1ffa87de129f")
+		)
+		(pin "4"
+			(uuid "d8e77604-4e44-4294-888a-bdb5dbf30d6f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cbd6237-2831-4089-948e-30988c356630")
+		(property "Reference" "D100"
+			(at 108.204 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f460405-721b-4fec-9d64-ce1970e6ec95")
+		)
+		(pin "1"
+			(uuid "b7306204-5707-4164-99db-5564e318b03d")
+		)
+		(pin "3"
+			(uuid "2b4b0f91-8669-406d-9675-bb01d3ee15f1")
+		)
+		(pin "4"
+			(uuid "10159e2f-8320-44e0-ba82-6f902d8d6ff1")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d343a8e-9574-48c2-b91e-5a2d66b4ebe9")
+		(property "Reference" "D93"
+			(at 72.644 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "266547d3-51e1-46e7-9f78-5d680aa6ca56")
+		)
+		(pin "1"
+			(uuid "3ccf329f-dc6e-45ce-a915-b615c067598c")
+		)
+		(pin "3"
+			(uuid "d4be2774-c02d-4584-ad10-394bdf95ee46")
+		)
+		(pin "4"
+			(uuid "83d6a947-7b15-448b-a846-62ac810f3869")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 157.48 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8136b892-ecd6-4789-8e8c-8374f430df6d")
+		(property "Reference" "D105"
+			(at 161.544 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 162.052 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 158.75 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b096c3fb-628d-49ff-9b01-c5d6aef31573")
+		)
+		(pin "1"
+			(uuid "468a6f57-7854-4e59-b9cc-b21a9cffb8d6")
+		)
+		(pin "3"
+			(uuid "1ddedb23-dca6-4ab0-a955-0403581073b0")
+		)
+		(pin "4"
+			(uuid "0199ec0e-d9ff-4c04-8c3b-2fb6cdeb2b2b")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85e02f35-8eae-4ea7-b872-4bdf25a7ba33")
+		(property "Reference" "D129"
+			(at 143.764 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0b471ae2-dbdb-468e-99b3-a43845a0f137")
+		)
+		(pin "1"
+			(uuid "f5df1c99-3a31-405b-8c9f-b2dd211f7709")
+		)
+		(pin "3"
+			(uuid "932dbdc3-5429-4b79-9b4f-a6c70d391ca7")
+		)
+		(pin "4"
+			(uuid "4250e2e3-1740-4b1f-aa91-a2b1754e85c7")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 257.81 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8bb44690-5f46-49e7-943c-729428591860")
+		(property "Reference" "D150"
+			(at 251.46 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 264.16 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 265.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 267.335 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 257.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "331f2913-8f1a-49f3-a9bc-b4e220a00f29")
+		)
+		(pin "1"
+			(uuid "c1eaa243-a3f0-489e-9765-0b4d4858ee67")
+		)
+		(pin "3"
+			(uuid "15a67d7a-c891-4f12-ae8f-0701b9cf1d39")
+		)
+		(pin "4"
+			(uuid "cf6ab6e2-f046-483f-bf15-cf44078ddeb6")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91fa06bd-9fc6-4d19-9ac6-4186d23d6cfc")
+		(property "Reference" "D71"
+			(at 37.084 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b717e1b4-786e-41df-9492-9ec0e7ab9f23")
+		)
+		(pin "1"
+			(uuid "0186cff3-195f-46e4-ba2d-caa6c90bb0e2")
+		)
+		(pin "3"
+			(uuid "20f05a59-f9db-41c1-8e82-68fa1240e165")
+		)
+		(pin "4"
+			(uuid "0dff5fce-9d7b-4182-9e48-7fed95e4b24f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 167.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c2d17e8-cf0c-4b84-9f33-8a159dbeb7bc")
+		(property "Reference" "D140"
+			(at 234.95 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "29eb910d-a43d-481c-b8fc-6b561373b202")
+		)
+		(pin "1"
+			(uuid "5825e7df-70aa-400b-b97d-54d3aad0e492")
+		)
+		(pin "3"
+			(uuid "07f16bac-e1b3-40ec-aefe-b2d8054db451")
+		)
+		(pin "4"
+			(uuid "0ec4728c-75fe-4b5d-8810-94771616f5a5")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d3641e1-3a4c-4bb2-9fb8-48125c762829")
+		(property "Reference" "D145"
+			(at 217.17 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ffb6342-db99-40ef-868b-1e7af08dd32e")
+		)
+		(pin "1"
+			(uuid "d531721e-6ffe-48c1-99d6-d4128db285b8")
+		)
+		(pin "3"
+			(uuid "e5c33d3c-40d9-4bd9-b8ba-1e7c5c3c70cc")
+		)
+		(pin "4"
+			(uuid "5de1ea13-1610-4a93-a444-613af16af82d")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a377533b-29b9-4143-bef8-8b0985a8e23a")
+		(property "Reference" "D61"
+			(at 37.084 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "60715c8d-a7d0-433b-92fc-984931b350a7")
+		)
+		(pin "1"
+			(uuid "372e131b-a777-4f1f-a888-26626873a65f")
+		)
+		(pin "3"
+			(uuid "bf533480-65fa-42e1-9784-9b34e212f83d")
+		)
+		(pin "4"
+			(uuid "359c718e-1e85-4b85-a0d8-ab4af4ce15e6")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3f5cf62-dfc8-412c-8a1c-4a9967270c25")
+		(property "Reference" "D116"
+			(at 54.864 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d0936e0-0418-4b5b-9b1b-a5d0cd213842")
+		)
+		(pin "1"
+			(uuid "e62ed424-4fdd-46d3-96e9-f99293347402")
+		)
+		(pin "3"
+			(uuid "b123a49c-28be-4df3-ba8f-34250ae13f90")
+		)
+		(pin "4"
+			(uuid "a7094628-36ee-42ee-9594-a00fb2b329da")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5323520-fa2b-4635-90ba-23afd31204e9")
+		(property "Reference" "D67"
+			(at 143.764 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4aee20cd-783b-4e1c-9417-52e71b21aed0")
+		)
+		(pin "1"
+			(uuid "70f33e89-7428-443d-94e1-e07350dfc0d1")
+		)
+		(pin "3"
+			(uuid "f7b41439-0496-4ab7-a587-41236733ae66")
+		)
+		(pin "4"
+			(uuid "a5b25be4-c88c-4a7d-be46-3f3453b75a3f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab1fb82e-2ab1-4380-89b3-0ddd00c3ee91")
+		(property "Reference" "D108"
+			(at 179.324 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a257bae-461e-4417-8f06-5baad0d0670a")
+		)
+		(pin "1"
+			(uuid "c3a6c100-3bc6-4b11-addc-d80e19f6bacf")
+		)
+		(pin "3"
+			(uuid "28a03344-a0f1-4cd7-a4ad-23e869e62297")
+		)
+		(pin "4"
+			(uuid "2a4dab45-ab11-4943-9968-2260a70fbc1b")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad1877ce-7a59-490b-89a9-5e757d4308ee")
+		(property "Reference" "D101"
+			(at 125.984 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "afb15bc8-493a-4e0d-846c-6a70ed71e57d")
+		)
+		(pin "1"
+			(uuid "f9b1fa2c-c4d9-428d-bba4-dbdb900efae6")
+		)
+		(pin "3"
+			(uuid "ff3b48bf-11c2-41e0-82cf-95f990c3f2b7")
+		)
+		(pin "4"
+			(uuid "7f151432-7c73-49ca-87ed-7a0efd306388")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2eda8c0-4bec-4877-ad54-4fc04f15aec8")
+		(property "Reference" "D122"
+			(at 90.424 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8175174d-cc5e-42ff-90f0-32c5854a2929")
+		)
+		(pin "1"
+			(uuid "2d18a09b-ec18-45d8-9cef-d77f1d030c60")
+		)
+		(pin "3"
+			(uuid "66847c7e-8484-43e6-9d49-ab06cef1b307")
+		)
+		(pin "4"
+			(uuid "1c9e9026-9667-4222-8718-a73c2e628e7f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b40f0e61-caca-431b-b149-02f49a6ad6f9")
+		(property "Reference" "D142"
+			(at 217.17 145.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b33af02d-b43d-4443-92f8-b5c9ab138092")
+		)
+		(pin "1"
+			(uuid "53ab8455-0275-4f95-851c-e234ad8bbfd4")
+		)
+		(pin "3"
+			(uuid "39fe975c-4996-4e23-b399-de20e2779d31")
+		)
+		(pin "4"
+			(uuid "51675240-183c-47c7-be72-78a1491db0ee")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b422c200-344c-4d22-9545-22c1217d4985")
+		(property "Reference" "D91"
+			(at 54.864 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e854e88d-68cf-4742-96e4-4d9d6fd4741e")
+		)
+		(pin "1"
+			(uuid "9d827ba1-18a3-4ad0-b92f-09f2a58e0cd4")
+		)
+		(pin "3"
+			(uuid "f5059c0e-e0e5-422b-a502-3382d6c8a2fd")
+		)
+		(pin "4"
+			(uuid "70c39ab7-633d-4c36-a91b-e2a014259cc5")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfaf98c1-823d-492c-8ea3-6aadde0b8ba6")
+		(property "Reference" "D113"
+			(at 37.084 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c90cd1ba-3bef-4ea3-90b9-f013586cbd57")
+		)
+		(pin "1"
+			(uuid "860ace90-28dc-4767-9ef4-77a09f2aec1d")
+		)
+		(pin "3"
+			(uuid "1e5385e7-6a2a-47be-85fe-066172c844ff")
+		)
+		(pin "4"
+			(uuid "3ca7e3f5-f6f4-4bd5-b740-ba90c1a38235")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfcfd7ae-d0b6-495d-94cb-7139aa3022d9")
+		(property "Reference" "D125"
+			(at 108.204 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b0a4b51-58de-4cdc-b249-6bd9dd909ddd")
+		)
+		(pin "1"
+			(uuid "c529a8c4-c466-4094-b78e-b5c6601185d2")
+		)
+		(pin "3"
+			(uuid "715d4025-1be9-4246-a8ce-8dcdb1b3943f")
+		)
+		(pin "4"
+			(uuid "b5b3c0b1-4f26-41cd-bf28-d63d1f631f44")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0f0ce08-626c-4147-804d-463926d3ecef")
+		(property "Reference" "D86"
+			(at 37.084 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8d4ad15-d4d8-4649-ac6f-dea47b7f0eb4")
+		)
+		(pin "1"
+			(uuid "b341ca7a-a460-4f03-8a25-176733ce133d")
+		)
+		(pin "3"
+			(uuid "96f8c4b2-a63d-4bf3-b753-04a7270b6871")
+		)
+		(pin "4"
+			(uuid "bc034dee-e3f7-488e-be3f-dae2f148243a")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c189d30c-6482-4706-858e-96e8e65ed7df")
+		(property "Reference" "D155"
+			(at 217.17 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e8ffea1-fa9b-4042-93d8-c76d25cde22a")
+		)
+		(pin "1"
+			(uuid "f0aed6f1-28c4-4525-a14c-8c198f68e94b")
+		)
+		(pin "3"
+			(uuid "0b652553-b802-4ae1-8ec0-fa27bbfb7a41")
+		)
+		(pin "4"
+			(uuid "4e015e2d-7a0d-4e11-b4e7-b9fc43299fe2")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 257.81 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1cfbf12-91e3-4ecc-bea3-dd786f6de533")
+		(property "Reference" "D147"
+			(at 251.46 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 264.16 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 265.43 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 267.335 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 257.81 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2b4da05e-7506-4bd7-9584-608626cd58b7")
+		)
+		(pin "1"
+			(uuid "bc71a49e-92f7-447f-b2fe-6a1122994b06")
+		)
+		(pin "3"
+			(uuid "f525825a-10de-4eaf-8a9c-bf85584e4014")
+		)
+		(pin "4"
+			(uuid "005e4c54-d927-4cfe-aa33-20a73f67758e")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1dc1b27-0d47-4375-9280-2a245de34144")
+		(property "Reference" "D149"
+			(at 234.95 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c74359f-4c51-4d8f-893d-3cb3758f1529")
+		)
+		(pin "1"
+			(uuid "8a8b2c28-309b-4318-8d98-38708f33c72c")
+		)
+		(pin "3"
+			(uuid "f4dd9d0a-40ae-431d-9299-fcaff87b4486")
+		)
+		(pin "4"
+			(uuid "c7854c45-0857-4b6b-ad40-674a4c2ef43a")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D149")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c65efe33-6359-4a73-bc39-cd414419ff19")
+		(property "Reference" "D119"
+			(at 72.644 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8899bde-04da-4071-bfbc-5b802fa9aa51")
+		)
+		(pin "1"
+			(uuid "cd21c51e-8635-4730-a506-56d87fbb4703")
+		)
+		(pin "3"
+			(uuid "a381f386-45e6-4d1b-8403-96925866f092")
+		)
+		(pin "4"
+			(uuid "fdbcf12b-5b60-4153-aa4f-4a2bed8b34aa")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6b6e1a2-46fe-4217-ba45-7ae1496c34ff")
+		(property "Reference" "D143"
+			(at 234.95 145.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "be3660ad-f738-4ca2-be09-1257202ed2d5")
+		)
+		(pin "1"
+			(uuid "a2b2a4fa-c07d-4ba6-8c30-2bc6f72a2be7")
+		)
+		(pin "3"
+			(uuid "e2278b61-feae-4745-b6ef-243ed4bbc911")
+		)
+		(pin "4"
+			(uuid "57450265-6969-4a93-bd11-f0d0365212f9")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c97efa3e-b29f-43ca-9876-c0b4579e8d1a")
+		(property "Reference" "D88"
+			(at 37.084 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a6e15d70-d70c-4a76-bc6e-c64ded99d3bf")
+		)
+		(pin "1"
+			(uuid "bc26e0eb-4fe6-4b78-96a0-0f95e7c3f35f")
+		)
+		(pin "3"
+			(uuid "141ad7ae-f8eb-412f-bbb5-37aa50c98ca1")
+		)
+		(pin "4"
+			(uuid "8506881e-1149-48e7-899b-8d5453388bb7")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cab46066-ac40-4f2e-9e8c-cb35e71a9c1b")
+		(property "Reference" "D109"
+			(at 197.104 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b2655055-8660-4e38-8e96-1f06686dddc8")
+		)
+		(pin "1"
+			(uuid "6dfec07b-fee9-45c4-bd99-50ad680b8fe2")
+		)
+		(pin "3"
+			(uuid "6a67ea81-e757-45c0-a239-a3628c361bfe")
+		)
+		(pin "4"
+			(uuid "fc0064ee-f1bb-4e2b-90ff-6014ba387ff2")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cae28688-1af7-4199-8c4f-acb9cc0cce54")
+		(property "Reference" "D94"
+			(at 72.644 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 122.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2bb65070-14a2-47bd-b3d7-0dca4fd4ff1d")
+		)
+		(pin "1"
+			(uuid "9a2487f2-2e90-4f44-a8fd-dcd7189a3d82")
+		)
+		(pin "3"
+			(uuid "18641373-d175-4f3a-a432-16952d7a0ab8")
+		)
+		(pin "4"
+			(uuid "ed9c1336-b246-4536-9b0e-42b3be7e143d")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D94")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd50c980-d557-48ec-92ae-c0ad82f3016c")
+		(property "Reference" "D102"
+			(at 125.984 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "df6f8fda-6da0-4875-b341-749434de09e3")
+		)
+		(pin "1"
+			(uuid "a142308b-0916-48e9-a77e-c646310640a1")
+		)
+		(pin "3"
+			(uuid "07e916ea-0fc8-4eea-9462-8860fb63f07c")
+		)
+		(pin "4"
+			(uuid "13bba5d4-383c-49aa-8904-541c6fcf2d3f")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 33.02 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d20adfc2-f567-49bf-a888-219ac83f5679")
+		(property "Reference" "D87"
+			(at 37.084 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 37.592 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 34.29 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 35.56 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 33.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "702c8a67-58d1-47e2-9a9b-e3efe7c5e2cd")
+		)
+		(pin "1"
+			(uuid "0bafe7d5-9431-4eb0-abdd-63daeb53cd13")
+		)
+		(pin "3"
+			(uuid "ee2f81ec-0f92-4386-bea0-b39cf8805b91")
+		)
+		(pin "4"
+			(uuid "752cc11e-2361-4839-9057-76284fa4058c")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d268f982-fb0a-4a43-9cda-66f1f73cf7b9")
+		(property "Reference" "D85"
+			(at 108.204 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5d92c00c-7929-402d-a85c-4a56db17fed2")
+		)
+		(pin "1"
+			(uuid "ccbb57b2-5808-4f4a-b8b0-430d270080ad")
+		)
+		(pin "3"
+			(uuid "cc9c5e46-36f6-4855-8b19-917c1edad78f")
+		)
+		(pin "4"
+			(uuid "9947b846-bbc4-4a3d-8697-4ff31e56600c")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d42bab39-e8d2-4303-a13e-3605053a706b")
+		(property "Reference" "D107"
+			(at 179.324 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f3d7589-2451-4356-b367-5022419b661e")
+		)
+		(pin "1"
+			(uuid "049ff2e6-ff70-4b6f-a6b1-7abff05e0233")
+		)
+		(pin "3"
+			(uuid "82e9f493-aaeb-4399-b7de-3d5839e1f9b4")
+		)
+		(pin "4"
+			(uuid "e87eecdb-5ba2-4263-b70c-cacd4438d528")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d54fd59a-1ac8-4336-b7da-8b0fecbc62af")
+		(property "Reference" "D77"
+			(at 143.764 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66bc869a-5073-47c3-8bf3-d4e7e5b266a0")
+		)
+		(pin "1"
+			(uuid "66384f75-c1e1-4976-afd4-2c3c10a80724")
+		)
+		(pin "3"
+			(uuid "647b01fa-732e-4d4b-9d99-e3972c2d7bb5")
+		)
+		(pin "4"
+			(uuid "544616f9-3a1e-4ce9-8214-5060f0358940")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d5f6f735-40ff-4db6-8963-a04746cda144")
+		(property "Reference" "D64"
+			(at 90.424 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7693bac2-e1be-461c-b4f6-7b69cd9a00cb")
+		)
+		(pin "1"
+			(uuid "9a990a18-8496-4770-b44b-01e4744c6cae")
+		)
+		(pin "3"
+			(uuid "fb142685-f4ea-45c9-9da9-135ae0946828")
+		)
+		(pin "4"
+			(uuid "904b76fc-ccae-438b-bc85-0f2f97742dd5")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d86e8265-143b-4719-a921-8552f12ab7ff")
+		(property "Reference" "D65"
+			(at 108.204 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a4fe5147-0773-4df4-a8e9-7d436c816976")
+		)
+		(pin "1"
+			(uuid "f5748503-76dc-4e08-b6ff-702887459af6")
+		)
+		(pin "3"
+			(uuid "084394e5-62ad-4776-b34e-10b43d63712e")
+		)
+		(pin "4"
+			(uuid "bf1aea67-6aa6-4571-91d3-0f1d4297c6e3")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "db21ea10-70c8-4aa3-ba7e-517989159221")
+		(property "Reference" "D123"
+			(at 108.204 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "84615aba-ebdd-4e56-ae69-5f5d60c3c6c2")
+		)
+		(pin "1"
+			(uuid "85622644-b0eb-4c13-b720-5d25bb37be67")
+		)
+		(pin "3"
+			(uuid "b52b13ca-f626-4c55-a4f0-9a8987e14d65")
+		)
+		(pin "4"
+			(uuid "2119f8df-51b4-46d1-9f8b-1c0c634a0e01")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 68.58 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddd84c9e-c02b-400d-8823-29ba1e7bdc38")
+		(property "Reference" "D73"
+			(at 72.644 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.152 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 69.85 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 71.12 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b1d63789-d219-42da-9fc9-6ded356e59b7")
+		)
+		(pin "1"
+			(uuid "a5ae0bec-dd47-4b92-b044-bdd4dabffbfc")
+		)
+		(pin "3"
+			(uuid "27f1bd70-817f-4c97-abfb-7acd4a25521e")
+		)
+		(pin "4"
+			(uuid "6f4a5481-37fa-402b-89b2-e10570b70944")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de58477e-6466-403f-b47d-5e37c0f3fc4d")
+		(property "Reference" "D114"
+			(at 54.864 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c7d2fa5c-00d8-4799-9313-65d6bc65e601")
+		)
+		(pin "1"
+			(uuid "6266284a-2e47-4844-9c92-77bc46408717")
+		)
+		(pin "3"
+			(uuid "4fc8320a-084c-4632-bcc7-b99b034f566d")
+		)
+		(pin "4"
+			(uuid "404f2542-d112-4f05-83ae-cc75424d870a")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 257.81 185.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df644893-8d99-458d-8ba2-3a8b0bc2a8ed")
+		(property "Reference" "D138"
+			(at 251.46 181.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 264.16 180.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 265.43 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 267.335 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 257.81 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba9199a9-7815-48ab-95d2-596d1cd87961")
+		)
+		(pin "1"
+			(uuid "140d87fc-8cc8-491f-8857-fe7634b75b71")
+		)
+		(pin "3"
+			(uuid "8e60baf2-0efb-4830-9e63-ea8b6410188b")
+		)
+		(pin "4"
+			(uuid "8b8fc175-5663-40f1-9810-caceee47e2bc")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfc1bb59-165e-4693-bbfb-1628f2715ab8")
+		(property "Reference" "D120"
+			(at 90.424 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "283bdc38-8a39-408b-84c7-8521926ef92c")
+		)
+		(pin "1"
+			(uuid "49e1c0ba-cc09-44a2-81b3-9723db332519")
+		)
+		(pin "3"
+			(uuid "473e05a5-d2e7-43bb-9c2d-b10b1882a865")
+		)
+		(pin "4"
+			(uuid "e5edb904-7b8f-4bc0-b304-df41c02af288")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1469d77-4876-4621-aa1d-ff68fedf9fd8")
+		(property "Reference" "D146"
+			(at 234.95 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3ff61d4-e5fd-4cfe-bd25-813caca2d4e2")
+		)
+		(pin "1"
+			(uuid "c6d5e826-b40f-464b-8156-0a5cd2b409cf")
+		)
+		(pin "3"
+			(uuid "c6657a4f-7b3a-4ec6-a5d8-b0c2f5295664")
+		)
+		(pin "4"
+			(uuid "42335222-2e6d-4aaa-bd75-bdb3d5a2a42d")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1c881dd-f8d5-4f5d-9942-7e80f155918b")
+		(property "Reference" "D159"
+			(at 217.17 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 229.87 20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 231.14 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 233.045 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f18d623-51a9-4d37-996a-14bda15a0e69")
+		)
+		(pin "1"
+			(uuid "518e666e-1d13-4a73-ad2e-184c45118c8d")
+		)
+		(pin "3"
+			(uuid "6fb6cfae-3f7e-49e0-8813-2872abc698e6")
+		)
+		(pin "4"
+			(uuid "5f7f11e1-b566-4b95-8c02-2e8d30835036")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D159")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2b2b30d-91d8-48b2-b5aa-4926dd6b3c4b")
+		(property "Reference" "D103"
+			(at 143.764 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.272 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 140.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99747fca-d7bc-41f9-a402-28d0d76301cc")
+		)
+		(pin "1"
+			(uuid "ec117128-937a-40d3-996f-45f20dfc6573")
+		)
+		(pin "3"
+			(uuid "ac50db30-99b4-4b34-8793-b5021d192432")
+		)
+		(pin "4"
+			(uuid "76281d89-15c9-4220-8131-29b43d753bf5")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 175.26 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e722dfce-ca1f-4379-a5bc-d703f19662b1")
+		(property "Reference" "D79"
+			(at 179.324 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 179.832 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 176.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 177.8 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 175.26 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5cabdec8-b319-49fd-acfd-ac61585d5716")
+		)
+		(pin "1"
+			(uuid "9b15fa26-4037-4b32-95f3-b345669ebded")
+		)
+		(pin "3"
+			(uuid "ca143c7e-1a7e-4231-ab8e-61cfbc5b3082")
+		)
+		(pin "4"
+			(uuid "6b4974fc-83b1-45d7-96f9-1ac7dda7f6b6")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e882d24b-42e7-4e00-8cf3-250fd008bacc")
+		(property "Reference" "D62"
+			(at 54.864 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3505d5ca-69fa-4795-9013-ad410c9fef24")
+		)
+		(pin "1"
+			(uuid "9c496bc2-1f24-401a-8cb8-da513dd832e1")
+		)
+		(pin "3"
+			(uuid "7ff42dab-8e2a-4f3a-97ec-31d990117014")
+		)
+		(pin "4"
+			(uuid "95740758-00f0-4865-b72f-149366a8b18e")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 241.3 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e89c0b0c-7313-4087-8016-2b626dc23258")
+		(property "Reference" "D160"
+			(at 234.95 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 247.65 20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 248.92 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.825 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 241.3 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3100db29-cde3-40e4-9325-3206855008bf")
+		)
+		(pin "1"
+			(uuid "0f0029b9-c88a-4e93-888f-092273f71626")
+		)
+		(pin "3"
+			(uuid "af4be19e-ef9f-4667-8476-a399372dea82")
+		)
+		(pin "4"
+			(uuid "7bf44c04-1716-470c-825d-602ffe9e427b")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9a91e43-59f9-455c-af79-a71febfdc13c")
+		(property "Reference" "D134"
+			(at 197.104 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68cc13e7-33c6-4df1-904e-057a5d89876b")
+		)
+		(pin "1"
+			(uuid "9426e31a-0aa8-4bbb-ad41-87c0d21a8198")
+		)
+		(pin "3"
+			(uuid "ffd00622-5465-4af8-b1b3-17dcd0e4da16")
+		)
+		(pin "4"
+			(uuid "5a42181b-35a5-417d-9852-eaefe785d4df")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea3bf47d-83f7-43cf-be5f-c3f4080ccbdd")
+		(property "Reference" "D74"
+			(at 90.424 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fdee4c63-b743-468d-a631-ec834dc2c040")
+		)
+		(pin "1"
+			(uuid "16e217ec-1772-4476-b07d-af448dff904e")
+		)
+		(pin "3"
+			(uuid "a476def4-c61b-4c81-8ce9-130ab138cd7b")
+		)
+		(pin "4"
+			(uuid "e108a5ae-0ece-4e22-bbba-2c056039e0e6")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ebb4e8bb-83b5-4d42-bf23-91b2708d43d0")
+		(property "Reference" "D135"
+			(at 197.104 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c5f7a49-ea61-477d-819b-f37e92344848")
+		)
+		(pin "1"
+			(uuid "7163c107-0802-442c-9e31-0f9458dc9c98")
+		)
+		(pin "3"
+			(uuid "25c2d2f2-8551-4780-8ff1-4f9c055bd620")
+		)
+		(pin "4"
+			(uuid "320a7008-4bfa-49f7-a47a-f561fbfae757")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee1d16f6-5794-412d-a110-f3367bd986e3")
+		(property "Reference" "D96"
+			(at 90.424 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 90.932 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f32703eb-0058-45fe-b6bc-ce094bf7cf04")
+		)
+		(pin "1"
+			(uuid "beb794e7-e55a-428c-bfae-4ce38ce96da1")
+		)
+		(pin "3"
+			(uuid "e2926ebc-929d-465a-834b-9fc91f1984aa")
+		)
+		(pin "4"
+			(uuid "a30f9451-1d43-46e5-8eca-8ff08321c298")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D96")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 193.04 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef2e78ef-0d8d-4c2a-9912-2174b82f628b")
+		(property "Reference" "D70"
+			(at 197.104 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 197.612 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 194.31 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 195.58 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 193.04 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a303ddb6-6bc6-45ae-a7e1-be9d95630071")
+		)
+		(pin "1"
+			(uuid "0a7fb2c5-c8b7-4a29-bc35-ad7bd35a8c0a")
+		)
+		(pin "3"
+			(uuid "4e7504f9-f0ae-4ba1-b6da-fe4c429e5240")
+		)
+		(pin "4"
+			(uuid "004d9218-917e-4cb8-bb74-ca5047ddc068")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0f78671-c998-4fc8-8bf7-8ad7ee21f2b2")
+		(property "Reference" "D66"
+			(at 125.984 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 126.492 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 123.19 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb4e14d0-3fcf-4d30-bdef-2386957a2012")
+		)
+		(pin "1"
+			(uuid "7c2904d4-b0c4-44fc-ae66-7bdc5d7e2677")
+		)
+		(pin "3"
+			(uuid "e9c1551e-c9b4-456d-a97b-23bcaafbf1f1")
+		)
+		(pin "4"
+			(uuid "48e50503-d40a-4dda-ba6f-9796f114b0f0")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6823240-69aa-42df-bfd0-b349acc0399c")
+		(property "Reference" "D90"
+			(at 54.864 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.372 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 52.07 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea87d77a-51da-42b6-9856-5edb0e784a2a")
+		)
+		(pin "1"
+			(uuid "32847b94-93be-45fc-b2c0-c85e770161aa")
+		)
+		(pin "3"
+			(uuid "a642c6ec-757c-4933-9436-129bffc88bef")
+		)
+		(pin "4"
+			(uuid "46437262-24f7-41ab-b3c4-5472d7970890")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 104.14 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7eaeed1-6889-430d-9d96-d8fac20125e2")
+		(property "Reference" "D99"
+			(at 108.204 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 108.712 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 105.41 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 106.68 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f1bad3c0-ce8f-4522-aaea-bdb543e6524b")
+		)
+		(pin "1"
+			(uuid "76777c3c-fbe7-4e6e-8e25-6685f20cab07")
+		)
+		(pin "3"
+			(uuid "936e454d-9dd4-409e-9500-c477202a1ef6")
+		)
+		(pin "4"
+			(uuid "c3640a48-028f-4915-b410-4806426eb714")
+		)
+		(instances
+			(project "ws2812_watches"
+				(path "/e85b04d1-86dc-4592-8fa6-31c82c7db3d2/9f9f9cd7-6ace-4a5d-a753-79c01a7ed240"
+					(reference "D99")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -396,44 +396,6 @@
 		)
 	)
 	(sheet
-		(at 101.6 25.4)
-		(size 25.4 25.4)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "00073af9-3f59-4fba-adf1-200169ccc69f")
-		(property "Sheetname" "led-circle"
-			(at 101.6 24.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led-circle.kicad_sch"
-			(at 101.6 51.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "esp32s3_watches"
-				(path "/546746d8-9087-4747-b922-4ea0efc98497"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 63.5 25.4)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
